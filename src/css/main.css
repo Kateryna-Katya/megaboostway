@@ -228,3 +228,87 @@ padding-right: 0;
             height: 30px;
         }
 }
+/* The Forest That Remembers */
+.forest-section{
+    background-image: url("/img/forest/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 780px;
+}
+.forest-wrapper{
+backdrop-filter: blur(22px);
+    box-shadow: inset 0 0 22px 0 rgba(255, 255, 255, 0.8);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.45) 0%, rgba(171, 80, 253, 0.45) 100%);
+    border-radius: 22px;
+        padding: 44px 22px;
+        width: 335px;
+        height: 360px;
+}
+.forest-text{
+    margin-top: 22px;
+}
+@media only screen and (min-width: 1440px) {
+    .forest-section{
+        background-image: url("/img/forest/desk.png");
+        height: 700px;
+    }
+    .forest-container{
+        padding: 225px 100px;
+    }
+    .forest-wrapper{
+        margin-right: 0;
+        margin-left: auto;
+            width: 690px;
+            height: 250px;
+    }
+    .forest-title{
+        text-align: left;
+    }
+}
+/* A Path Toward the Tree of Light */
+.path-section{
+        background-image: url("/img/path/mob.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+            height: 850px;
+}
+.path-wrapper{
+    position: relative;
+    border-radius: 22px;
+        padding: 44px 22px;
+        width: 335px;
+        height: 334px;
+        backdrop-filter: blur(22px);
+            box-shadow: inset 0 0 22px 0 rgba(255, 255, 255, 0.8);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.45) 0%, rgba(171, 80, 253, 0.45) 100%);
+}
+.path-img{
+    position: absolute;
+    top: -15%;
+    left: -6%;
+    z-index: 1;
+}
+.path-text{
+    margin-top: 22px;
+}
+@media only screen and (min-width: 1440px) {
+   .path-section{
+    background-image: url("/img/path/desk.png");
+    height: 732px;
+   }
+   .path-container{
+    padding-top: 254px;
+    padding-bottom: 254px;
+   }
+   .path-wrapper{
+         width: 690px;
+        height: 224px;
+   }
+   .path-img{
+    position: absolute;
+    top: -110%;
+    left: 0;
+   }
+}
