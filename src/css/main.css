@@ -88,6 +88,9 @@ height: 800px;
 .hero-text-two{
     text-align: left;
 }
+.hero-btn.pulse {
+    margin-left: 0;
+}
 }
 /* Disclaimer */
 .disclaimer-section{
@@ -110,4 +113,105 @@ height: 800px;
     .disclaimer-text{
         font-size: 32px;
     }
+}
+/* demo */
+.play-section {
+    background-image: url("/img/demo/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.demo-container {
+    padding-top: 60px;
+padding-left: 0;
+padding-right: 0;
+}
+
+.demo-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-img {
+    width: 100%;
+    display: block;
+
+}
+
+.demo-img {
+    display: block;
+    width: 234px;
+        height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+}
+
+/* iframe поверх картинки */
+.iframe-wrapper {
+    position: absolute;
+    top: 9%;
+    /* під екран у картинці */
+    left: 41%;
+    transform: translateX(-50%);
+    width: 68%;
+    height: 54%;
+    z-index: 5;
+}
+
+#gameIframe {
+    width: 127%;
+    height: 153%;
+    border: none;
+    display: none;
+    background: #000;
+    border-radius: 10px;
+}
+
+#closeIframeBtn {
+    position: absolute;
+    top: 20px;
+    right: -70px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+    width: 40px;
+    height: 20px;
+}
+.demo-firefly{
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (min-width: 1440px) {
+.play-section {
+        background-image: url("/img/demo/desk.png");
+    }
+    .demo-container{
+        padding-left: 200px;
+        padding-right: 200px;
+        position: relative;
+    }
+    .demo-firefly{
+        position: absolute;
+        bottom: 14%;
+        right: 4%;
+        z-index: 6;
+    }
+        #closeIframeBtn {
+            position: absolute;
+            top: 60px;
+            right: -140px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: none;
+            z-index: 10;
+            width: 60px;
+            height: 30px;
+        }
 }

@@ -31,3 +31,34 @@ world kinda... notices what you're doing.</p>
         GAME.</p>
     </div>
 </section>
+<section class="play-section" id="demo">
+    <div class="container demo-container">
+        <h2 class="visually-hidden">Tree of light</h2>
+        <div class="demo-wrapper" id="play">
+            <picture>
+                <source srcset="
+             /img/demo/demo-desk.png 1x,
+             /img/demo/demo-desk@2x.png 2x
+             " media="(min-width: 1439px)" />
+                <source srcset="
+            /img/demo/demo-mob.png  1x,
+             /img/demo/demo-mob@2x.png 2x
+             " media="(max-width: 1438px)" />
+                <img class="game-img" src="/img/demo/demo-mob.png" alt="Tree of light" loading="lazy" />
+            </picture>
+            <div class="iframe-wrapper">
+                <iframe id="gameIframe"></iframe>
+
+                <button id="closeIframeBtn" class="hidden-close-btn" aria-label="Close">
+                    <img src="/img/demo/close.png" alt="Close">
+                </button>
+            </div>
+        </div>
+        <a class="demo-btn" href="#play"
+            data-game-url="https://demo.evoplay.games/demo/fullstate/html5/evoplay/treeoflight" target="gameIframe">
+                <img class="demo-img" src="/img/hero/btn.png" alt="Play Free" loading="lazy" />
+            </picture>
+        </a>
+        <img class="demo-firefly" src="/img/demo/firefly.png" alt="firefly" loading="lazy"/>
+    </div>
+</section>
