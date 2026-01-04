@@ -159,6 +159,7 @@ padding-right: 0;
     width: 68%;
     height: 54%;
     z-index: 5;
+        pointer-events: none;
 }
 
 #gameIframe {
@@ -168,6 +169,14 @@ padding-right: 0;
     display: none;
     background: #000;
     border-radius: 10px;
+}
+/* АКТИВНИЙ СТАН */
+.iframe-wrapper.active {
+    pointer-events: auto;
+}
+
+#gameIframe.active {
+    display: block;
 }
 
 #closeIframeBtn {
@@ -181,6 +190,10 @@ padding-right: 0;
     z-index: 10;
     width: 40px;
     height: 20px;
+    pointer-events: auto;
+}
+#closeIframeBtn.active {
+    display: block;
 }
 .demo-firefly{
     margin-top: 24px;
